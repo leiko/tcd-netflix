@@ -1,0 +1,7 @@
+edu\fiap\netflix\Genre.class
+edu\fiap\netflix\NetflixApplication.class
+edu\fiap\netflix\SwaggerConfig.class
+edu\fiap\netflix\ContentRepository.class
+edu\fiap\netflix\ContentServiceController.class
+edu\fiap\netflix\Content.class
+edu\fiap\netflix\GenreRepository.class
