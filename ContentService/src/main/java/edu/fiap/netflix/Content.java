@@ -6,21 +6,23 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Content {
+public class Content implements Comparable<Content>{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String name;
-    private int genre;
+    private Integer genre;
+    private Integer views; 
 	
     public Content() {
     	
     }
     
-    public Content(String name, int genre) {
+    public Content(String name, int genre, int views) {
     	this.name = name;
     	this.genre = genre;
+    	this.views = views;
     }
     
 	@Override
@@ -35,9 +37,17 @@ public class Content {
 	public String getName() {
 		return name;
 	}
+	
+	public Integer getViews() {
+		return views;
+	}
 
-	public int getGenre() {
+	public Integer getGenre() {
 		return genre;
 	}
+	
+    public int compareTo(Content o) {
+        return this.getViews().compareTo(o.getViews());
+    }
 
 }
