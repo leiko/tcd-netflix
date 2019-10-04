@@ -9,9 +9,9 @@
 		<version>1.4.4.RELEASE</version>
 	</parent>
 	<groupId>edu.fiap</groupId>
-	<artifactId>contentservice</artifactId>
+	<artifactId>listservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>contentservice</name>
+	<name>profileservice</name>
 	<description>Netflix Spring Boot</description>
 
 	<properties>
