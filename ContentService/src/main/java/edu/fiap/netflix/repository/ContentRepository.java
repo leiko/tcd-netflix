@@ -1,8 +1,10 @@
-package edu.fiap.netflix;
+package edu.fiap.netflix.repository;
 
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
+
+import edu.fiap.netflix.model.Content;
 
 
 public interface ContentRepository extends CrudRepository<Content, Long> {

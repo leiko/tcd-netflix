@@ -1,4 +1,4 @@
-package edu.fiap.netflix;
+package edu.fiap.netflix.controller;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import edu.fiap.netflix.model.Content;
+import edu.fiap.netflix.repository.ContentRepository;
+
 @RestController
 @RequestMapping(value = "netflix")
 public class ContentServiceController {
@@ -20,35 +23,6 @@ public class ContentServiceController {
 
 	@Autowired
 	private ContentRepository contentRepository;
-
-	@Autowired
-	private GenreRepository genreRepository;
-
-	@RequestMapping(value = "/addContent", method = RequestMethod.GET)
-	public void addContent() {
-
-		log.info("---addContent---");
-
-		contentRepository.save(new Content("La la land", 4, 20));
-		contentRepository.save(new Content("Harry Potter", 2, 100));
-		contentRepository.save(new Content("Carros", 2, 100));
-		contentRepository.save(new Content("IT", 1, 35));
-		contentRepository.save(new Content("X", 1, 100));
-		contentRepository.save(new Content("Y", 1, 42));
-		contentRepository.save(new Content("Z", 1, 4));
-	}
-
-	@RequestMapping(value = "/addGenre", method = RequestMethod.GET)
-	public void addGenre() {
-
-		log.info("---addGenres---");
-
-		genreRepository.save(new Genre(1, "Terror"));
-		genreRepository.save(new Genre(2, "Aventura"));
-		genreRepository.save(new Genre(3, "Infantil"));
-		genreRepository.save(new Genre(4, "Romance"));
-
-	}
 
 	@RequestMapping(value = "/findContentByName/{contentName}", method = RequestMethod.GET)
 	public List<Content> findContentByName(@PathVariable("contentName") String name) {

@@ -1,28 +1,33 @@
-package edu.fiap.netflix;
+package edu.fiap.netflix.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "content")	
 public class Content implements Comparable<Content>{
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	@Column(name = "id", nullable = false)
+	private int id;
+	@Column(name = "name", nullable = false)
 	private String name;
+	@Column(name = "genre", nullable = false)
     private Integer genre;
+	@Column(name = "views", nullable = false)
     private Integer views; 
 	
     public Content() {
     	
     }
     
-    public Content(String name, int genre, int views) {
+    public Content(int id, String name, int genre, int views) {
     	this.name = name;
     	this.genre = genre;
     	this.views = views;
+    	this.id = id;
     }
     
 	@Override
@@ -30,7 +35,7 @@ public class Content implements Comparable<Content>{
 		return "Content [id=" + id + ", name=" + name + ", genre=" + genre + "]";
 	}
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 

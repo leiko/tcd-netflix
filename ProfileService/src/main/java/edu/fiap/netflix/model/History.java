@@ -1,18 +1,15 @@
-package edu.fiap.netflix;
+package edu.fiap.netflix.model;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 @Embeddable
 public class History {
 	
-    @NotNull
-    @Size(max = 100)
+	@Column(name = "date", nullable = false)
     private String date;
-
-    @NotNull
-    @Size(max = 100)
+	
+	@Column(name = "content", nullable = false)
     private String content;
 
     

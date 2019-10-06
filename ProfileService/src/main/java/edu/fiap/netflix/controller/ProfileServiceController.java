@@ -1,8 +1,6 @@
-package edu.fiap.netflix;
+package edu.fiap.netflix.controller;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.Set;
 
 import org.slf4j.Logger;
@@ -13,6 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import edu.fiap.netflix.model.User;
+import edu.fiap.netflix.repository.UserRepository;
+
 @RestController
 @RequestMapping(value = "netflix/profile")
 public class ProfileServiceController {
@@ -21,30 +22,9 @@ public class ProfileServiceController {
 
 	@Autowired
 	private UserRepository repository;
-	
-	@RequestMapping(value = "/addUsers", method = RequestMethod.GET)
-	public void addUsers() {
-
-		log.info("---addUsers---");
-		
-		Set<Integer> list = new HashSet<>();
-		list.add(1);
-		list.add(2);
-        
-		Set<Integer> favorites = new HashSet<>();
-		favorites.add(2);
-		favorites.add(1);
-		
-		Collection<String> history = new ArrayList<String>();
-		history.add("03/10/2019 - UP");
-		history.add("02/10/2019 - IT");
-				
-		repository.save(new User("Ana", history, list, favorites));
-		
-	}
 
 	@RequestMapping(value = "/view/history/{userID}", method = RequestMethod.GET)
-	public Collection<String> viewHistory(@PathVariable("userID") Long userID) {
+	public Collection<String> viewHistory(@PathVariable("userID") int userID) {
 
 		log.info("---viewHistory---");
 		
@@ -61,7 +41,7 @@ public class ProfileServiceController {
 	}
 
 	@RequestMapping(value = "/add/favorite/{userID}/{contentID}", method = RequestMethod.PUT)
-	public void addFavorite(@PathVariable("userID") Long userID, @PathVariable("contentID") Integer contentID) {
+	public void addFavorite(@PathVariable("userID") int userID, @PathVariable("contentID") int contentID) {
 
 		log.info("---addFavorite: " + userID + " " + contentID);
 
@@ -74,7 +54,7 @@ public class ProfileServiceController {
 	}
 	
 	@RequestMapping(value = "/add/list/{userID}/{contentID}", method = RequestMethod.PUT)
-	public void addToList(@PathVariable("userID") Long userID, @PathVariable("contentID") Integer contentID) {
+	public void addToList(@PathVariable("userID") int userID, @PathVariable("contentID") int contentID) {
 
 		log.info("---addToList: " + userID + " " + contentID);
 
