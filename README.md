@@ -8,10 +8,13 @@ Root File -> Properties -> Java Build Path -> Libraries -> Add Library -> JRE ->
 
 <h2>How to run docker</h2>
 
-docker run --name=netflixdb -e MYSQL_PASSWORD=senha -e MYSQL_USER=usuario -e MYSQL_ROOT_PASSWORD=admin123 -e MYSQL_DATABASE=netflix -p 3306:3306 -d mysql/mysql-server
+docker run --name=netflixdb -e MYSQL_PASSWORD=senha -e MYSQL_USER=usuario -e MYSQL_ROOT_PASSWORD=admin123 -e MYSQL_DATABASE=netflix -h localhost -p 3306:3306 -d mysql/mysql-server
 
-Adjust the IP to the Docker IP in the ContentService/src/main/resources/application.properties
-spring.datasource.url=jdbc:mysql://127.0.0.1:3306/netflix 
+<h2>How to access the database</h2>
+
+docker exec -it netflixdb mysql -h localhost -u root -p
+
+Use the password: admin123
 
 <h2>How to run the application</h2>
 Click on root file
@@ -20,6 +23,10 @@ Maven Install
 Run As...
 Spring Boot App
 
-<h2>How to access the API</h2>
+<h2>How to access the APIs</h2>
 
+ContentService
 http://localhost:8080/swagger-ui.html
+
+ProfileService
+http://localhost:8090/swagger-ui.html
