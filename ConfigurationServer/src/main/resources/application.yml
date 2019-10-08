@@ -37,4 +37,7 @@ spring:
        server:
            native:
               #searchLocations: file:///C:\Users\logonpflocal\eclipse-workspace\fiap-microservices-aula2-configuration\confsvr\src\main\resources\config\licensingservice
-              searchLocations: /home/lkonno/github/tcd-netflix/confsvr/src/main/resources/config/netflixservice
+              searchLocations: /home/lkonno/github/tcd-netflix/ConfigurationServer/src/main/resources/config/netflixservice
+              
+              
+              
