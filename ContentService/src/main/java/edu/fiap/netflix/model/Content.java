@@ -43,6 +43,10 @@ public class Content implements Comparable<Content>{
 		return name;
 	}
 	
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public Integer getViews() {
 		return views;
 	}
