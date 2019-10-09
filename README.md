@@ -1,7 +1,7 @@
 # tcd-netflix
 tcd
 
-<h2>How to setup</h2>
+<h2>How to setup development environment</h2>
 
 Import Maven Projet
 Root File -> Properties -> Java Build Path -> Libraries -> Add Library -> JRE -> Alternate
@@ -16,12 +16,22 @@ docker exec -it netflixdb mysql -h localhost -u root -p
 
 Use the password: admin123
 
-<h2>How to run the application</h2>
+<h2>How to run the application from Eclipse</h2>
+
 Click on root file
 Run As...
 Maven Install
 Run As...
 Spring Boot App
+
+Start in the following Order:
+
+1. Docker
+2. EurekaServer
+3. ConfigurationServer
+4. ContentService
+5. ProfileService
+6. SupportService
 
 <h2>How to access the APIs</h2>
 
@@ -30,3 +40,12 @@ http://localhost:8080/swagger-ui.html
 
 ProfileService
 http://localhost:8090/swagger-ui.html
+
+SupportService
+http://localhost:8888/swagger-ui.html
+
+EurekaServer
+http://localhost:8761 
+
+ConfigurationServer
+http://localhost:8888 
