@@ -58,4 +58,40 @@ INSERT INTO user_favorites (user_id, favorites)
 VALUES (2, 1);
 
 INSERT INTO user_history (user_id, history)
+VALUES (1, "12/09/2019 - Supernatural");
+
+INSERT INTO user_history (user_id, history)
 VALUES (2, "02/10/2019 - IT");
+
+INSERT INTO user_history (user_id, history)
+VALUES (3, "14/10/2019 - Friends");
+
+INSERT INTO user_history (user_id, history)
+VALUES (3, "01/10/2019 - Psicose");
+
+INSERT INTO user_history (user_id, history)
+VALUES (4, "24/06/2019 - Pets");
+
+INSERT INTO user_history (user_id, history)
+VALUES (5, "30/03/2019 - Sherlock");
+
+INSERT INTO user_history (user_id, history)
+VALUES (6, "05/04/2019 - Narnia");
+
+INSERT INTO user_history (user_id, history)
+VALUES (7, "31/01/2019 - Titanic");
+
+INSERT INTO user_history (user_id, history)
+VALUES (8, "13/03/2019 - As Branquelas");
+
+INSERT INTO user_history (user_id, history)
+VALUES (8, "08/08/2019 - Detona Ralph");
+
+INSERT INTO user_history (user_id, history)
+VALUES (8, "10/09/2019 - Bird Box");
+
+INSERT INTO user_history (user_id, history)
+VALUES (9, "13/12/2018 - Divertidamente");
+
+INSERT INTO user_history (user_id, history)
+VALUES (10, "04/08/2019 - Dark");
