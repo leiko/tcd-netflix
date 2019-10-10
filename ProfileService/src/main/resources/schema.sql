@@ -27,6 +27,30 @@ VALUES (1, "Paulo");
 INSERT INTO user (id,  name)
 VALUES (2, "Ana");
 
+INSERT INTO user (id,  name)
+VALUES (3, "Sérgio");
+
+INSERT INTO user (id,  name)
+VALUES (4, "Mariana");
+
+INSERT INTO user (id,  name)
+VALUES (5, "Márcio");
+
+INSERT INTO user (id,  name)
+VALUES (6, "Maria");
+
+INSERT INTO user (id,  name)
+VALUES (7, "Eduardo");
+
+INSERT INTO user (id,  name)
+VALUES (8, "Ana");
+
+INSERT INTO user (id,  name)
+VALUES (9, "Luiza");
+
+INSERT INTO user (id,  name)
+VALUES (10, "José");
+
 INSERT INTO user_list (user_id, list)
 VALUES (1, 1);
 
