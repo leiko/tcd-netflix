@@ -50,8 +50,11 @@
 	<!--Docker build Config -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<start-class>edu.fiap.aula2.ConfigServerApplication</start-class>
+		<start-class>edu.fiap.netflix.ConfigServerApplication</start-class>
+		<docker.image.prefix>netflix</docker.image.prefix>
 		<java.version>1.8</java.version>
+		<docker.image.name>configurationserver</docker.image.name>
+		<docker.image.tag>1.0</docker.image.tag>				
 	</properties>
 
 	<build>
