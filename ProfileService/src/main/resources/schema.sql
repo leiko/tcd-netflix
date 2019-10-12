@@ -55,52 +55,163 @@ INSERT INTO user_list (user_id, list)
 VALUES (1, 1);
 
 INSERT INTO user_list (user_id, list)
+VALUES (1, 14);
+
+INSERT INTO user_list (user_id, list)
+VALUES (1, 22);
+
+INSERT INTO user_list (user_id, list)
+VALUES (1, 54);
+
+INSERT INTO user_list (user_id, list)
+VALUES (1, 41);
+
+INSERT INTO user_list (user_id, list)
+VALUES (1, 39);
+
+INSERT INTO user_list (user_id, list)
 VALUES (2, 1);
+
+INSERT INTO user_list (user_id, list)
+VALUES (3, 23);
+
+INSERT INTO user_list (user_id, list)
+VALUES (3, 38);
+
+INSERT INTO user_list (user_id, list)
+VALUES (3, 43);
 
 INSERT INTO user_list (user_id, list)
 VALUES (3, 2);
 
 INSERT INTO user_list (user_id, list)
-VALUES (4, 1);
+VALUES (4, 10);
+
+INSERT INTO user_list (user_id, list)
+VALUES (3, 60);
 
 INSERT INTO user_list (user_id, list)
 VALUES (5, 4);
 
 INSERT INTO user_list (user_id, list)
-VALUES (6, 2);
+VALUES (5, 44);
 
 INSERT INTO user_list (user_id, list)
-VALUES (7, 2);
+VALUES (5, 8);
 
 INSERT INTO user_list (user_id, list)
-VALUES (8, 1);
+VALUES (6, 36);
+
+INSERT INTO user_list (user_id, list)
+VALUES (6, 33);
+
+INSERT INTO user_list (user_id, list)
+VALUES (6, 3);
+
+INSERT INTO user_list (user_id, list)
+VALUES (6, 57);
+
+INSERT INTO user_list (user_id, list)
+VALUES (6, 51);
+
+INSERT INTO user_list (user_id, list)
+VALUES (7, 9);
+
+INSERT INTO user_list (user_id, list)
+VALUES (7, 15);
+
+INSERT INTO user_list (user_id, list)
+VALUES (7, 18);
+
+INSERT INTO user_list (user_id, list)
+VALUES (7, 14);
+
+INSERT INTO user_list (user_id, list)
+VALUES (8, 30);
 
 INSERT INTO user_list (user_id, list)
 VALUES (9, 10);
 
 INSERT INTO user_list (user_id, list)
+VALUES (9, 23);
+
+INSERT INTO user_list (user_id, list)
+VALUES (9, 35);
+
+INSERT INTO user_list (user_id, list)
+VALUES (9, 46);
+
+INSERT INTO user_list (user_id, list)
+VALUES (10, 4);
+
+INSERT INTO user_list (user_id, list)
+VALUES (10, 2);
+
+INSERT INTO user_list (user_id, list)
 VALUES (10, 3);
+
+INSERT INTO user_list (user_id, list)
+VALUES (10, 7);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (1, 1);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (1, 41);
 
 INSERT INTO user_favorites (user_id, favorites)
 VALUES (2, 1);
 
 INSERT INTO user_favorites (user_id, favorites)
-VALUES (3, 1);
+VALUES (3, 23);
 
 INSERT INTO user_favorites (user_id, favorites)
-VALUES (5, 10);
+VALUES (3, 38);
 
 INSERT INTO user_favorites (user_id, favorites)
-VALUES (6, 2);
+VALUES (3, 43);
 
 INSERT INTO user_favorites (user_id, favorites)
-VALUES (7, 5);
+VALUES (3, 2);
 
 INSERT INTO user_favorites (user_id, favorites)
-VALUES (9, 2);
+VALUES (3, 60);
 
 INSERT INTO user_favorites (user_id, favorites)
-VALUES (10, 6);
+VALUES (5, 4);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (5, 44);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (5, 8);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (7, 15);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (7, 14);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (8, 30);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (9, 10);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (9, 35);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (10, 4);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (10, 2);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (10, 3);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (10, 7);
 
 INSERT INTO user_history (user_id, history)
 VALUES (1, "10/01/2019 - Supernatural");
