@@ -54,8 +54,53 @@ VALUES (10, "José");
 INSERT INTO user_list (user_id, list)
 VALUES (1, 1);
 
+INSERT INTO user_list (user_id, list)
+VALUES (2, 1);
+
+INSERT INTO user_list (user_id, list)
+VALUES (3, 2);
+
+INSERT INTO user_list (user_id, list)
+VALUES (4, 1);
+
+INSERT INTO user_list (user_id, list)
+VALUES (5, 4);
+
+INSERT INTO user_list (user_id, list)
+VALUES (6, 2);
+
+INSERT INTO user_list (user_id, list)
+VALUES (7, 2);
+
+INSERT INTO user_list (user_id, list)
+VALUES (8, 1);
+
+INSERT INTO user_list (user_id, list)
+VALUES (9, 10);
+
+INSERT INTO user_list (user_id, list)
+VALUES (10, 3);
+
 INSERT INTO user_favorites (user_id, favorites)
 VALUES (2, 1);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (3, 1);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (5, 10);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (6, 2);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (7, 5);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (9, 2);
+
+INSERT INTO user_favorites (user_id, favorites)
+VALUES (10, 6);
 
 INSERT INTO user_history (user_id, history)
 VALUES (1, "10/01/2019 - Supernatural");
