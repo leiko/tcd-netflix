@@ -1,5 +1,7 @@
 # tcd-netflix
-tcd
+
+<h2>Netflix Microservices</h2>
+<img src="https://user-images.githubusercontent.com/29177721/67148113-f066b580-f271-11e9-9d67-46b633b71321.jpg" alt="modeling">
 
 <h2>How to setup development environment</h2>
 
@@ -50,5 +52,3 @@ http://localhost:8761
 ConfigurationServer
 http://localhost:8888 
 
-<h2>Netflix Microservices</h2>
-<img src="https://user-images.githubusercontent.com/29177721/67148113-f066b580-f271-11e9-9d67-46b633b71321.jpg" alt="modeling">
