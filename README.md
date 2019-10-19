@@ -1,7 +1,19 @@
 # tcd-netflix
 
+Nexflix microservices use case project using Spring Boot and Spring Cloud.
+
 <h2>Netflix Microservices</h2>
 <img src="https://user-images.githubusercontent.com/29177721/67148113-f066b580-f271-11e9-9d67-46b633b71321.jpg" alt="modeling">
+
+ContentService: service with content (movies, series..) endpoints. 
+
+ProfileService: service with profile preferences endpoints. 
+
+SupportService: service with support endpoints. 
+
+EurekaServer: service discovery for all the services. 
+
+ConfigurationServer: all services configuration is located in this server.
 
 <h2>How to setup development environment</h2>
 
@@ -28,7 +40,7 @@ Spring Boot App
 
 Start in the following Order:
 
-1. Docker
+1. MySQL Docker
 2. EurekaServer
 3. ConfigurationServer
 4. ContentService
