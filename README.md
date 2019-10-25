@@ -3,7 +3,7 @@
 Nexflix microservices use case project using Spring Boot and Spring Cloud.
 
 <h2>Netflix Microservices</h2>
-<img src="https://user-images.githubusercontent.com/29177721/67148113-f066b580-f271-11e9-9d67-46b633b71321.jpg" alt="modeling">
+<img src="https://user-images.githubusercontent.com/29177721/67609251-2b7d5300-f762-11e9-8fcd-2fda2a4ee03e.jpg" alt="modeling">
 
 ContentService: service with content (movies, series..) endpoints. 
 
