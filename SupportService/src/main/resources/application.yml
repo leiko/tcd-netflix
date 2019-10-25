@@ -5,19 +5,14 @@ spring:
   cloud:
     stream:
       bindings:
-        inboundOrgChanges:
-          destination: orgChangeTopic
+        inboundTicketAlert:
+          destination: ticketChangeTopic
           content-type: application/json
-          group: licensingGroup
+          group: supportGroup
       kafka:
         binder:
           zkNodes: localhost
           brokers: localhost
-
-#        input:
-#          destination: orgChangeTopic
-#          content-type: application/json
-#          group: licensingGroup
 
 # eureka:
 #   instance:

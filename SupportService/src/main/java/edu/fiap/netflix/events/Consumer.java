@@ -18,7 +18,7 @@ public class Consumer {
 	@Autowired
 	private TicketService ticketService;
 	
-	@StreamListener("inboundOrgChanges")
+	@StreamListener("inboundTicketAlert")
 	public void loggerSink(String msg) {
 		
 		logger.debug("New ticket alert! " + msg);
