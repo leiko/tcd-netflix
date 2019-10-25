@@ -9,28 +9,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import edu.fiap.netflix.model.Ticket;
-import edu.fiap.netflix.service.Consumer;
-import edu.fiap.netflix.service.Producer;
+import edu.fiap.netflix.service.TicketService;
 
 @RestController
 @RequestMapping(value = "netflix/support")
 public class SupportServiceController {
 
 	@Autowired
-	private Producer producer;
-
-	@Autowired
-	private Consumer consumer;
-
-	@RequestMapping(value = "/ticket/open", method = RequestMethod.PUT)
-	public void openTicket(@RequestBody Ticket ticket) {
-		producer.openTicket(ticket);
-
-	}
-
+	private TicketService ticketService;
+	
 	@RequestMapping(value = "/ticket/viewQueue", method = RequestMethod.GET)
 	public List<Ticket> viewQueue() {
-		return consumer.viewQueue();
+		
+		return ticketService.viewQueue();
 
 	}
 
