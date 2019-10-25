@@ -1,0 +1,15 @@
+version: "2"
+services:
+  database:
+    image: postgres:9.5
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=p0stgr@s
+      - POSTGRES_DB=eagle_eye_local
+  kafkaserver:
+    image: spotify/kafka
+    ports:
+      - 2181:2181
+      - 9092:9092
