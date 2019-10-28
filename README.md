@@ -16,6 +16,10 @@ EurekaServer: service discovery for all the services.
 ConfigurationServer: all services configuration is located in this server.
 
 <h2>How to setup development environment</h2>
+Configurar e instalar requirements para menssaging with kafka
+- Apache ZooKeeper
+- Apache Kafka
+- Criar tópico ticketChangeTopic
 
 Import Maven Projet
 Root File -> Properties -> Java Build Path -> Libraries -> Add Library -> JRE -> Alternate
@@ -24,6 +28,8 @@ Root File -> Properties -> Java Build Path -> Libraries -> Add Library -> JRE ->
 
 docker run --name=netflixdb -e MYSQL_PASSWORD=senha -e MYSQL_USER=usuario -e MYSQL_ROOT_PASSWORD=admin123 -e MYSQL_DATABASE=netflix -h localhost -p 3306:3306 -d mysql/mysql-server
 
+docker-compose up (run on root)
+
 <h2>How to access the database</h2>
 
 docker exec -it netflixdb mysql -h localhost -u root -p
@@ -31,11 +37,6 @@ docker exec -it netflixdb mysql -h localhost -u root -p
 Use the password: admin123
 
 <h2>How to run the application from Eclipse</h2>
-
-Configurar e instalar requirements para menssaging with kafka
-- Apache ZooKeeper
-- Apache Kafka
-- Criar tópico ticketChangeTopic
 
 Click on root file
 Run As...
