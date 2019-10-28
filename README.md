@@ -32,6 +32,11 @@ Use the password: admin123
 
 <h2>How to run the application from Eclipse</h2>
 
+Configurar e instalar requirements para menssaging with kafka
+- Apache ZooKeeper
+- Apache Kafka
+- Criar tópico ticketChangeTopic
+
 Click on root file
 Run As...
 Maven Install
