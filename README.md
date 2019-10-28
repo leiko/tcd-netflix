@@ -16,10 +16,11 @@ EurekaServer: service discovery for all the services.
 ConfigurationServer: all services configuration is located in this server.
 
 <h2>How to setup development environment</h2>
+
 Configurar e instalar requirements para menssaging with kafka
-- Apache ZooKeeper
-- Apache Kafka
-- Criar tópico ticketChangeTopic
+1) Instalar e configurar Apache ZooKeeper
+2) Instalar e configurar Apache Kafka
+3) Criar tópico ticketChangeTopic
 
 Import Maven Projet
 Root File -> Properties -> Java Build Path -> Libraries -> Add Library -> JRE -> Alternate
